@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck Norris Jokes</title>
+
+    <style>
+        body {
+            background: #212121;
+            color: #BABABA;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            margin: 200px auto 0;
+            width: 80%;
+        }
+
+        .joke-container {
+            border: 3px solid #6E6E6E;
+            padding: .35em .25em;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .btn {
+            background: #3B2929;
+            color: #BABABA;
+            padding: .2em .15em;
+        }
+
+        a:link {
+            background: #3B2929;
+        }
+
+        a:hover {
+            background: #6E4D4D;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="joke-container center-text">
+        <h1>Random Joke</h1>
+
+        <div>
+            <p th:text="${joke}">Random Joke</p>
+        </div>
+
+        <div>
+            <a href="/" class="btn">Random Joke</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
