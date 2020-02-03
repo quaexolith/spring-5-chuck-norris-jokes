@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class JokesService {
 
-    private ChuckNorrisQuotes quotes;
+    private final ChuckNorrisQuotes quotes;
 
-    JokesService() {
-        quotes = new ChuckNorrisQuotes();
+    JokesService(ChuckNorrisQuotes quotes) {
+        this.quotes = quotes;
     }
 
     String findRandomJoke() {
